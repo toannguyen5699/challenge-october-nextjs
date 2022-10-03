@@ -1,0 +1,12 @@
+[
+	{
+		"shiftName": "A",
+		"from": {"hour": "08", "minute": "00"},
+		"to": {"hour": "19", "minute": "59"}
+	},
+	{
+		"shiftName": "B",
+		"from": {"hour": "20", "minute": "00"},
+		"to": {"hour": "07", "minute": "59"}
+	}
+]

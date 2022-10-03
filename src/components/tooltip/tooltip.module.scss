@@ -1,0 +1,30 @@
+.tooltip {
+  position: relative;
+  display: inline;
+
+  .tooltipContent {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+  }
+
+  &:hover {
+    .tooltipContent {
+      width: 200px;
+      visibility: visible;
+    }
+  }
+
+  .top {
+    bottom: 100%;
+  }
+  .bottom {
+    top: 100%;
+  }
+  .right {
+    left: 100%;
+  }
+  .left {
+    right: 100%;
+  }
+}

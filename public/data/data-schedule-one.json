@@ -1,0 +1,99 @@
+[
+	{
+		"downTimeType": 0,
+		"state": "Running",
+		"hour": "08",
+		"minute": "01"
+	},
+	{
+		"downTimeType": 0,
+		"state": "Running",
+		"hour": "08",
+		"minute": "02"
+	},
+	{
+		"downTimeType": 0,
+		"state": "Running",
+		"hour": "08",
+		"minute": "03"
+	},
+	{
+		"downTimeType": 1,
+		"state": "Stopped",
+		"hour": "08",
+		"minute": "04"
+	},
+	{
+		"downTimeType": 1,
+		"state": "Stopped",
+		"hour": "08",
+		"minute": "05"
+	},
+	{
+		"downTimeType": 1,
+		"state": "Stopped",
+		"hour": "08",
+		"minute": "06"
+	},
+	{
+		"downTimeType": 4,
+		"state": "Stopped",
+		"hour": "08",
+		"minute": "07"
+	},
+	{
+		"downTimeType": 4,
+		"state": "Stopped",
+		"hour": "08",
+		"minute": "08"
+	},
+	{
+		"downTimeType": 4,
+		"state": "Stopped",
+		"hour": "08",
+		"minute": "09"
+	},
+	{
+		"downTimeType": 4,
+		"state": "Stopped",
+		"hour": "08",
+		"minute": "10"
+	},
+	{
+		"downTimeType": 21,
+		"state": "Stopped",
+		"hour": "09",
+		"minute": "10"
+	},
+	{
+		"downTimeType": 21,
+		"state": "Stopped",
+		"hour": "09",
+		"minute": "11"
+	},
+	{
+		"downTimeType": 21,
+		"state": "Stopped",
+		"hour": "09",
+		"minute": "12"
+	},
+	{
+		"downTimeType": 21,
+		"state": "Stopped",
+		"hour": "09",
+		"minute": "13"
+	},
+	{
+		"downTimeType": 21,
+		"state": "Stopped",
+		"hour": "09",
+		"minute": "14"
+	},
+		{
+		"downTimeType": 21,
+		"state": "Stopped",
+		"hour": "09",
+		"minute": "15"
+	}
+
+]

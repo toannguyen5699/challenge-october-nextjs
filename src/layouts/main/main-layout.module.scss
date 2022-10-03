@@ -1,0 +1,14 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  max-width: 475px;
+  min-height: 100vh;
+  overflow: auto;
+
+  .body {
+    flex: 1;
+  }
+}

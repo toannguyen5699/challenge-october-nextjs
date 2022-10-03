@@ -1,0 +1,72 @@
+@import "src/assets/css/utilities/index";
+
+.container {
+  display: flex;
+  width: 100%;
+  .contentLeft {
+    border-right: 1px solid #3e3e3e;
+    flex-grow: 2;
+    color: $c_white;
+    text-align: center;
+    align-items: center;
+    .contentLeftTable {
+      color: $c_white;
+      background-color: $c_bg-common;
+      border-bottom: 1px solid #3e3e3e;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .contentRight {
+    flex-grow: 6;
+    color: $c_white;
+    .contentRightRow {
+      display: flex;
+      .contentRightRowTable {
+        height: 35px;
+        border-bottom: 1px solid #3e3e3e;
+      }
+    }
+  }
+}
+
+.green {
+  background-color: green;
+  color: green;
+}
+
+.red {
+  background-color: red;
+  color: red;
+}
+.yellow {
+  background-color: yellow;
+  color: yellow;
+}
+.gray {
+  background-color: #384151;
+  color: #384151;
+}
+
+.tooltipContainer {
+  position: relative;
+  background: $c_white;
+  filter: drop-shadow(0 3px 24px rgba(0, 0, 0, 0.25));
+  border-radius: 12px;
+  width: 207px;
+  padding: 10px;
+  // margin-left: 30px;
+  margin-top: -48px;
+  margin-right: 28px;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  @media (max-width: 910px) {
+    width: 420px;
+  }
+}

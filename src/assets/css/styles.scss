@@ -1,0 +1,252 @@
+@import "bootstrap";
+@import "utilities/variable";
+@import "utilities/functions";
+@import "src/components/component";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../fonts/SF-Pro/SF-Pro-Text-Light.otf");
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+html,
+body {
+  line-height: initial !important;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent; /* make scrollbar transparent */
+  -webkit-appearance: none;
+  display: none; // Safari and Chrome
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: $p_font_size;
+  color: $c_primary;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button {
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  touch-action: manipulation;
+}
+
+.reset-button {
+  @include reset-button;
+}
+.popup-content {
+  @include popup-content;
+}
+.popup-div {
+  @include popup-div;
+}
+.popup-button-resend {
+  @include popup-button-resend;
+}
+.popup-button-yes {
+  @include popup-button-yes;
+}
+.popup-button-no {
+  @include popup-button-no;
+}
+
+.popup-button-delete {
+  @include popup-button-delete;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $black;
+}
+
+h1 {
+  font-size: $h1_font_size;
+}
+
+h2 {
+  font-size: $h2_font_size;
+}
+
+h3 {
+  font-size: $h3_font_size;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: $h4_font_size;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: $p_font_size;
+  font-weight: bold;
+}
+
+hr {
+  border-top: 1.5px solid rgba($c_grey, 0.1);
+}
+
+p {
+  font-size: $p_font_size;
+  color: $black;
+}
+
+.Toastify__toast-container {
+  bottom: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 475px;
+}
+
+.Toastify__toast--success {
+  background-color: $c_blue_lp !important;
+}
+
+.Toastify__toast.Toastify__toast--success.custom-toast {
+  background-color: $c_blue_lp !important;
+  justify-content: center;
+}
+
+.Toastify__toast.Toastify__toast--info.custom-toast {
+  background-color: white !important;
+  justify-content: center;
+  height: 128px !important;
+  button {
+    color: black !important;
+    width: 20px !important;
+    svg {
+      width: 23px !important;
+      height: 23px !important;
+    }
+  }
+}
+.Toastify__toast.Toastify__toast--info.Toastify__close-button {
+  color: black !important;
+}
+
+.Toastify__toast--error {
+  background-color: $c_danger !important;
+}
+
+.Toastify__toast {
+  border-radius: 15px 15px 0 0 !important;
+  height: 80px !important;
+  text-align: center;
+  padding: 10px 15px;
+  justify-content: center !important;
+  margin-bottom: 0 !important;
+
+  @media only screen and (min-width: 1200px) {
+    border-radius: unset !important;
+    margin-top: 22px !important;
+  }
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  margin: 10px 0 0 0;
+  max-width: 397px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 0 10px 0 15px;
+  align-items: center;
+  display: flex;
+  outline: none;
+  font-family: "Fira Sans", sans-serif;
+  color: $c_input_text2_new_app;
+  font-size: px-to-rem(18);
+  line-height: 19px;
+  background-image: url("../../assets/images/landing-page/monthly-calendar-svgrepo-com.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 95%;
+  border: 2px solid #505e63;
+
+  &::placeholder {
+    color: $c_input_placeholder_new_app;
+    font-size: px-to-rem(18);
+  }
+
+  &:-webkit-autofill {
+    box-shadow: inset 0 0 0 9999px white;
+  }
+}
+
+.Toastify__close-button {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.Toastify__toast-body {
+  max-width: 300px;
+  margin: auto;
+}
+
+.slick-slide div {
+  outline: none;
+}
+
+.slick-slide {
+  outline: none;
+  //padding: 0 5px 0 5px !important;
+}
+
+.slick-next {
+  display: none !important;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .Toastify__toast {
+    border-radius: 0;
+  }
+}
+
+.-success {
+  color: #333333;
+  background-color: #333333;
+}
+
+.pin-field {
+  border: 1px solid #333333 !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
